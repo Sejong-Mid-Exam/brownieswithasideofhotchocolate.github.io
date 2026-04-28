@@ -186,6 +186,7 @@ p {
     border: none;
     cursor: pointer;
     display: inline-block;
+    text-decoration: none;
 }
 
 .btn-primary:hover {
@@ -205,6 +206,7 @@ p {
     transition: all 0.3s ease;
     cursor: pointer;
     display: inline-block;
+    text-decoration: none;
 }
 
 .btn-secondary:hover {
@@ -575,6 +577,7 @@ p {
     font-weight: 500;
     cursor: pointer;
     transition: all 0.3s ease;
+    text-decoration: none;
 }
 
 .plan-button:hover {
@@ -586,6 +589,7 @@ p {
 .plan-button.primary {
     background: linear-gradient(to right, #ff69b4, #b19cd9);
     color: white;
+    text-decoration: none;
 }
 
 .plan-button.primary:hover {
@@ -735,6 +739,7 @@ p {
     font-weight: 500;
     cursor: pointer;
     transition: all 0.3s ease;
+    text-decoration: none;
 }
 
 .class-button:hover {
@@ -805,6 +810,7 @@ p {
     font-size: 1.125rem;
     cursor: pointer;
     transition: all 0.3s ease;
+    text-decoration: none;
 }
 
 .submit-button:hover {
