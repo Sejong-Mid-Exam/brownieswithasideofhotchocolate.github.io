@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 "Email": document.getElementById("email").value,
                 "Phone": document.getElementById("phone").value,
                 "Age": document.getElementById("age").value,
-                "Plan": selectedPlan ? selectedPlan.value : "Not selected",
+                "Plan": selectedPlan? selectedPlan.value: "Not selected",
                 "Goals": goals.length > 0 ? goals.join(", ") : "Not selected",
                 "Interest": document.getElementById("interest").value,
                 "Message": document.getElementById("message").value
@@ -53,7 +53,7 @@ document.addEventListener("DOMContentLoaded", function () {
             }
         }
     }
-    // Add smooth scrolling while keeping the #top link functional without JavaScript.
+    // Add smooth scrolling 
     document.querySelectorAll(".back-to-top").forEach(function (link) {
         link.addEventListener("click", function (e) {
             e.preventDefault();
