@@ -1,10 +1,12 @@
 document.addEventListener("DOMContentLoaded", function () {
+    // Handle the membership form only on the contact page.
     const form = document.getElementById("contactForm");
 
     if (form) {
         form.addEventListener("submit", function (e) {
             e.preventDefault();
 
+            // Collect the selected plan and all checked fitness goals.
             const selectedPlan = document.querySelector('input[name="plan"]:checked');
 
             const goals = [];
@@ -12,6 +14,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 goals.push(box.value);
             });
 
+            // Store every submitted field so the result page can build a table.
             const data = {
                 "Name": document.getElementById("name").value,
                 "Email": document.getElementById("email").value,
@@ -28,6 +31,7 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 
+    // Build the submission table on the fresh success page.
     const table = document.getElementById("resultTable");
 
     if (table) {
@@ -49,4 +53,14 @@ document.addEventListener("DOMContentLoaded", function () {
             }
         }
     }
+    // Add smooth scrolling while keeping the #top link functional without JavaScript.
+    document.querySelectorAll(".back-to-top").forEach(function (link) {
+        link.addEventListener("click", function (e) {
+            e.preventDefault();
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth"
+            });
+        });
+    });
 });
